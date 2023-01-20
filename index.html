@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Index
+     Andrea Abigil Salazar Cárdneas
+     00000229333-->
+<html>
+    
+    <head>
+        <title>Mi página personal | Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
+        <link rel="icon" type="image/png" href="img/cactus.png" sizes="32x32">
+    </head>
+    <body class="contenedorGrid">
+
+        <header>
+            <br>
+            <img class ="imglogo" width=85 height=85 src="img/cactus.png" />
+            ANDREA A. SALAZAR CÁRDENAS
+        </header>
+        <nav>
+                <a  HREF="index.html">Inicio</a>
+                <a  HREF="index.html#series">Series Favoritas</a>
+                <a  HREF="index.html#hobbies" >Hobbies</a>
+                <a  HREF="index.html#contacto">Contáctame</a>
+        </nav>       
+
+        <main>
+            <div class="contenedorDividido">
+                <div class="columna1">
+                     <h1>Bienvenido :)</h1>
+                <p>Esta es mi página personal, en esta podrás conocer más acerca de mi, mis pasatiempos y mis series/peliculas favoritas.<br/></p>
+                </div>
+                <div class="columna2">
+                    <img src="img/hello.gif"/>
+                </div>
+               
+            </div> 
+            <h1 id="hobbies" class="nuevaSeccion">Hobbies</h1>
+            <div class="contenedorDividido">
+               
+                <div class="columna1">
+                    
+                     <h2>Leer</h2>
+                     <p>Leer es uno de mis pasatiempos favoritos, mis géneros favoritos son fantasía y ciencia ficción. </p>
+
+                </div>
+                <div class="columna2">
+                    <img src="img/nacidos_de_la_bruma.png" width=170 height=250/>
+                    <img src="img/percy.jpg" width=170 height=250/>
+                    <img src="img/almond.jpg" width=170 height=250/>
+                </div>
+               
+            </div>
+            <div class="contenedorDividido">
+                <div class="columna1">
+                     <h2>Música</h2>
+                     <p>Escucho música la mayor parte del dia, me gusta tocar el violin y la guitarra. Mis géneros favoritos
+                        son:</p>
+                    <ul>
+                        <li>Pop</li>
+                        <li>Rock</li>
+                        <li>Clásica</li>
+                        <li>Jazz</li>
+                        <li>RnB</li>
+                    </ul>
+
+                </div>
+                <div class="columna2">
+                    <img src="img/keshi.jpg" width=170 height=200/>
+                    <img src="img/sato.jpg" width=170 height=200/>
+                    <img src="img/DRIMS.jpg" width=200 height=200/>
+                </div>
+            </div>
+            <h1 id="series" class="nuevaSeccion">Series favoritas</h1>
+            <div class="contenedorDividido">
+               
+                <div class="columna1">
+                     <p>Algunas de mis series favoritas son: </p>
+                     <ul>
+                        <li>Avatar: La leyenda de Aang</li>
+                        <li>The Good Place</li>
+                        <li>Alice in borderland</li>
+                    </ul>
+                </div>
+                <div class="columna2">
+                    <img src="https://media.newyorker.com/photos/5f01e383b975762d612e0ff3/master/w_2560%2Cc_limit/Barasch-Avatar.jpg" width=170 height=200/>
+                    <img src="https://pics.filmaffinity.com/The_Good_Place_Serie_de_TV-605671019-large.jpg" width=140 height=200/>
+                    <img src="https://www.ecured.cu/images/3/30/Alice_in_Borderland-Box_Art-8c2ed311-0e7a-11eb-91c2-1212be706fa9.jpg" width=150 height=200/>
+                </div>
+               
+            </div>
+            
+            <h1 id="contacto" class="nuevaSeccion">Contacto</h1>
+            <div class="contenedorDividido">
+               
+                <div class="columna1">
+                    ¿Quieres ponerte en contacto conmigo? llena el siguiente formulario<br/>
+                    <br/>
+                    <form action="mailto:andrea.salazar229333@potros.itson.edu.mx?subject=Contacto Form" 
+                        method="post" enctype="text/plain">
+        
+                        <fieldset>
+                            <legend>Asunto</legend>
+                            &nbsp  &nbsp<input type="text" class="simpleInput" id="nombre" name="nombre" placeholder=""><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Mensaje</legend>
+                            &nbsp &nbsp<textarea class="simpleInput" name="mensaje" placeholder="Escribe tu mensaje aquí" cols="80" rows="10" ></textarea>
+                            <br/>
+                        </fieldset>
+        
+                        <br/>
+                        &nbsp  &nbsp<input class="simpleBoton" type="submit" value="Enviar">
+                        <input class="simpleBoton" type="reset" value="Restablecer">
+                        <br/>
+                    </form>       
+
+                </div>
+                <div class="columna2">
+
+                </div>
+               
+            </div>
+        </main>
+        <footer>
+            Desarrollador del sitio: Andrea Salazar.<br/>
+            Fecha de creación: Enero del 2023.<br/>
+        </footer>     
+    </body>
+</html>
