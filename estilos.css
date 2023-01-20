@@ -1,0 +1,262 @@
+/*
+    Estilos
+    Andrea Abigail Salazar Cárdenas
+    00000229333
+*/
+
+/*Establece una nueva familia de fuente mediante un archivo .ttf*/
+@font-face {
+    font-family: "titleFont";
+    src: url("fonts/PlayfairDisplaySC-Regular.ttf");
+    }
+
+/*Contenedor cuadricula que contendrá todos los elementos de la página*/
+.contenedorGrid{
+    display: grid;
+
+    grid-template-rows: auto; 
+}
+
+/*Contenedor cuadricula que se divide en dos columnas para almacenar la información de Libros en la página aficiones*/
+.contenedorDividido{
+    display: grid;
+    gap: 5px;
+    grid-template-columns:45% 50%;
+    border-bottom:2px solid #68829b;
+    padding: 10px;
+}
+
+/*Contenedor que almacena la columna 1 del contenedor cuadricula aficiones*/
+.contenedorDividido > div.columna1{
+    grid-column: 1; 
+}
+
+/*Contenedor que almacena la columna 2 del contenedor cuadricula aficiones*/
+.contenedorDividido > div.columna2{
+    grid-column: 2;
+
+}
+
+/*Establece que el Header abarcará 2 columnas, 
+establece el estilo del texto, imágen de fondo y estilo del borde inferior*/
+header{
+    height: 152px;
+    font-size: 35px;
+    font-family:"titleFont";
+    text-align: center;
+    color:#7895B2;
+    border-bottom:2px solid #7895B2;
+    background-color: #F5EFE6;
+    background-image: url("img/header.png");
+}
+
+
+/*Establece el estilo del texto y que todos sus margenes tienen una longitud de 0*/
+body{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #7895B2;
+    margin:0px;
+    width: 100%;
+}
+
+
+/*Establece que el main empezará en la columna 2, su imágen de fondo, 
+tendra scroll si se excede el contenido y que su relleno de la izquierda sera de 2px*/
+main{
+    background-color: #E8DFCA;
+}
+
+/*Establece el color del thumb del scroll del elemento main*/
+body::-webkit-scrollbar-thumb {
+    background-color: #7895B2;
+}
+
+/*Establece el color del scroll del elemento main*/
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: transparent;
+}
+
+/*párrafo a la derecha*/
+p.derecha{
+    text-align: right;
+}
+
+/*imagen del logo a la izquierda*/
+img.imglogo{
+    float: left;
+    position: absolute;
+    left: 10px;
+    top:20px;
+}
+
+/*Establece el color de fondo del navegador*/
+nav{   
+    background-color:#AEBDCA;
+    height: 35px;
+    border-bottom:2px solid #7895B2;
+}
+
+/*Establece el estilo de los elementos de listas en el navegador*/
+nav a{
+    background-color:#7895B2;;
+    font-size: 17px;
+    padding: 10px;
+    color: #F5EFE6;
+    
+}
+
+/*Establece el estilo de los elementos de listas sen el navegador al pasar el mouse sobre ellos*/
+nav a:hover{
+    background-color:#AEBDCA;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Establece el estilo de los encabezados*/
+h1,h2,h3{
+    font-family: "Cambria";
+    padding: 30px;
+    
+}
+
+/*Establece el tamaño de letra y margen superior de h1*/
+h1{
+    font-size: 35px;
+    margin-top: 0px;
+    font-family: "titleFont";
+}
+
+h1.nuevaSeccion{
+    background-color: #AEBDCA;
+    border-bottom:2px solid #7895B2;
+    color: #7895B2;
+
+}
+
+/*Establece el tamaño de letra h2*/
+h2{
+    font-size: 30px;
+}
+
+/*Establece el tamaño de letra h3*/
+h3{
+    font-size: 20px;
+}
+
+/*Establece el estilo de todos los parrafos de la página*/
+p{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+/*Establece el estilo de todos los links de la página*/
+a{
+    color: #AEBDCA;
+    text-decoration: none;
+}
+
+/*Establece el estilo de todos los links de la página al pasar el mouse sobre ellos*/
+a:link:hover{
+    color: #F5EFE6;
+}
+
+/*Estilo de los bordes de las tablas*/
+table{
+    border-collapse: collapse;
+}
+
+/*Estilo de borde y padding de celdas*/
+td{
+    padding: 10px;
+    border: 1px solid #7895B2;
+}
+
+/*Color de ligas no visitadas y viditas en celdas, al pasar el mause sobre ellas*/
+td a:hover{
+    color:#F5EFE6;
+}
+
+/*Color de fondo de las celdas que no estan vacias*/
+td:not(:empty){
+    background-color: #E8DFCA;
+}
+
+/*Color de fondo, de texto, estilo de borde y relleno de las celdas encabezado*/
+th{
+    background-color: #7895B2;
+    color: #F5EFE6;
+    padding: 5px;
+    border: 2px solid #7895B2;
+}
+
+/*Estilo de borde y padding del título de tablas*/
+caption{
+    border:1px solid #68829b;
+    padding: 8px;
+}
+
+/*Estilo para imágenes con bordes redondeados y con sombreado*/
+img.redonda{
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #ccc;
+    margin: 10px;
+}
+
+/*Establece que el footer abarcará 2 columnas. 
+Tambien se establece la alineación del texto, color de fondo y relleno*/
+footer{
+    text-align: center;
+    background-color: #F5EFE6;
+    padding: 10px;
+}
+
+/*Tamaño de letra para etiquetas de un formulario*/
+label{
+    font-size: 15px;
+}
+
+/*Estilo para las secciones fieldset: se establece el tipo de letra, 
+que no tendrá decoración de texto, el color de fondo, longitud de borde y margen*/
+fieldset{
+    font-size: 20px;
+    border: 0;
+    text-decoration: none;
+    background-color: #E8DFCA;
+    margin: 10px;
+}
+
+/*Estilo simple para un elemento input*/
+.simpleInput{
+    border:0;
+    padding:10px;
+    margin:10px 0;
+    color: #767d82;
+
+}
+
+/*Establece que el elemento imput no tenga un borde cuando se selecciona*/
+.simpleInput:focus{
+    outline: none;
+
+}
+
+
+/*Estilo simple de un boton, se establece el color de fondo, estilo del borded,
+ estilo del texto y longitud del relleno y margen*/
+.simpleBoton{
+    background-color: #7895B2;
+    border: none;
+    color: #F5EFE6;
+    padding: 7px;
+    margin: 7px;
+    font-size: 15px;
+}
+/*Estilo simple de un boton cuando se pase el mouse sobre el*/
+.simpleBoton:hover{
+    background-color: #AEBDCA;
+    cursor: pointer;
+}
